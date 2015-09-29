@@ -14,8 +14,16 @@ $('.submit')
 	});
 
 $('input')
-	.on('mouseover',function(e){
+	.on('mouseover', function(e){
 		$(this).removeClass('error');
 	});
 
+$('.getstarted')
+	.on('click', function(e){
+		event.stopPropagation();
+	});
 
+$('.modal')
+	.on('click', function(e){
+		$(this).fadeOut('1000');
+	});
